@@ -20,45 +20,82 @@ public class MainActivity extends AppCompatActivity {
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
+        int num1, num2, sum;
 
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int sum = num1 + num2;
-
-        numberSumTV.setText("" + sum);
+        if (number1ET.getText().toString().equals("") || number2ET.getText().toString().equals("")){
+            num1 = 0;
+            num2 = 0;
+        }else{
+            num1 = Integer.parseInt((number1ET.getText().toString()));
+            num2 = Integer.parseInt((number2ET.getText().toString()));
+            sum = num1 + num2;
+            numberSumTV.setText("" + sum);
+        }
     }
     public void findDiff(View view) {
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
+        int num1, num2, diff;
 
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int diff = num1 - num2;
-
-        numberSumTV.setText("" + diff);
+        if (number1ET.getText().toString().equals("") || number2ET.getText().toString().equals("")){
+            num1 = 0;
+            num2 = 0;
+        }else{
+            num1 = Integer.parseInt((number1ET.getText().toString()));
+            num2 = Integer.parseInt((number2ET.getText().toString()));
+            diff = num1 - num2;
+            numberSumTV.setText("" + diff);
+        }
     }
     public void findProduct(View view) {
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
+        int num1, num2, product;
 
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int product = num1 * num2;
-
-        numberSumTV.setText("" + product);
+        if (number1ET.getText().toString().equals("") || number2ET.getText().toString().equals("")){
+            num1 = 0;
+            num2 = 0;
+        }else{
+            num1 = Integer.parseInt((number1ET.getText().toString()));
+            num2 = Integer.parseInt((number2ET.getText().toString()));
+            product = num1 * num2;
+            numberSumTV.setText("" + product);
+        }
     }
     public void findQuotient(View view) {
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
+        int num1, num2, quotient;
 
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int quotient = num1 / num2;
+        if (number1ET.getText().toString().equals("") || number2ET.getText().toString().equals("")){
+            num1 = 0;
+            num2 = 0;
+        }else{
+            num1 = Integer.parseInt((number1ET.getText().toString()));
+            num2 = Integer.parseInt((number2ET.getText().toString()));
+            quotient = num1 / num2;
+            numberSumTV.setText("" + quotient);
+        }
+    }
+    public void findRemainder(View view) {
+        EditText number1ET = findViewById(R.id.num1ET);
+        EditText number2ET = findViewById(R.id.num2ET);
+        TextView numberSumTV = findViewById(R.id.resultTV);
+       int num1, num2, remainder;
 
-        numberSumTV.setText("" + quotient);
+        if (number1ET.getText().toString().equals("") || number2ET.getText().toString().equals("")){
+            num1 = 0;
+            num2 = 0;
+        }else{
+            num1 = Integer.parseInt((number1ET.getText().toString()));
+            num2 = Integer.parseInt((number2ET.getText().toString()));
+            remainder = num1 % num2;
+            numberSumTV.setText("" + remainder);
+        }
+
     }
 
 

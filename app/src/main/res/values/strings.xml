@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">World\'s Best Calculator</string>
+    <string name="num2ET">\t\tNumber 2:</string>
+    <string name="num1ET">\t\tNumber 1:</string>
 </resources>
